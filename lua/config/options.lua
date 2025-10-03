@@ -21,14 +21,15 @@ opt.relativenumber = true
 
 opt.smartindent = true
 
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.softtabstop = 4
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.softtabstop = 2
 
 opt.textwidth = 80
 opt.wrap = true
 
-vim.g.autoformat = false
+vim.g.lazyvim_prettier_needs_config = true
+vim.g.autoformat = true
 
 vim.g.lazyvim_prettier_needs_config = true
 
@@ -46,5 +47,7 @@ vim.opt.sessionoptions = { -- required
   "folds",
   "terminal",
 }
+
+vim.opt.backupcopy = "yes"
 
 vim.g.omni_sql_no_default_maps = 1
