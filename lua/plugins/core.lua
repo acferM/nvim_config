@@ -6,6 +6,7 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "tsx",
         "typescript",
+        "prisma",
       })
     end,
   },
@@ -31,6 +32,7 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "biome",
       },
     },
   },
@@ -59,7 +61,7 @@ return {
     "snacks.nvim",
     opts = {
       ---@class snacks.scroll.Config
-            ---
+      ---
       scratch = { enabled = false },
       scroll = {
         animate = {
