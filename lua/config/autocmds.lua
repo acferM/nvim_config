@@ -27,6 +27,13 @@ autocmd("RecordingLeave", {
   end,
 })
 
+autocmd("BufWritePre", {
+  pattern = { ".js", ".ts", ".jsx", ".tsx", ".vue" },
+  callback = function()
+    vim.cmd("silent EslintFixAll")
+  end,
+})
+
 autocmd("BufWinLeave", {
   pattern = "*.*",
   callback = function()
